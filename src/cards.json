@@ -1,0 +1,22 @@
+{
+  "cards":{
+    "card":{
+      "id":"1",
+      "title":"Se Deu Mau!",
+      "imagePath":"../assets/drunk.png",
+      "description":"voce foi selecionado, rebole até o chao ou beba 2 shots"
+    },
+    "card":{
+      "id":"2",
+      "title":"Se Deu Bem!",
+      "imagePath":"../assets/dj.png",
+      "description":"Voce se livrou dessa mas a pessoa a sua esquerda toma um shot"
+    },
+    "card":{
+      "id":"3",
+      "title":"Se Deu Mau!",
+      "imagePath":"../assets/drunk.png",
+      "description":"voce foi selecionado, rebole até o chao ou beba 2 shots"
+    }
+  }
+}
