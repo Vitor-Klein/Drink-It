@@ -42,6 +42,6 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     color: '#fff',
     textAlign: 'justify',
-    width: '50%'
+    width: 300
   },
 });

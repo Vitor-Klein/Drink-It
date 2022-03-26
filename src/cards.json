@@ -1,22 +1,37 @@
 {
-  "cards":{
-    "card":{
+  "cards":[
+    {
       "id":"1",
       "title":"Se Deu Mau!",
-      "imagePath":"../assets/drunk.png",
+      "imagePath":"https://live.staticflickr.com/65535/51961522291_f184a2b175_b.jpg",
       "description":"voce foi selecionado, rebole até o chao ou beba 2 shots"
     },
-    "card":{
+    {
       "id":"2",
       "title":"Se Deu Bem!",
-      "imagePath":"../assets/dj.png",
-      "description":"Voce se livrou dessa mas a pessoa a sua esquerda toma um shot"
+      "imagePath":"https://live.staticflickr.com/65535/51961810544_1fa913d0ca_b.jpg",
+      "description":"jogue uma moeda, se der cara voce bebe 2 shots se der coroa o jogador a sua esquerda bebe 2 shots"
     },
-    "card":{
+    {
       "id":"3",
       "title":"Se Deu Mau!",
-      "imagePath":"../assets/drunk.png",
-      "description":"voce foi selecionado, rebole até o chao ou beba 2 shots"
+      "imagePath":"https://live.staticflickr.com/65535/51961522291_f184a2b175_b.jpg",
+      "description":"mostre suas ultimas mensagens ou beba 4 shots"
+    },
+    {
+      "id":"4",
+      "title":"Se Deu Mau!",
+      "imagePath":"https://live.staticflickr.com/65535/51961522291_f184a2b175_b.jpg",
+      "description":"dance macarena ou beba 2 shots"
+    },
+    {
+      "id":"2",
+      "title":"Se Deu Bem!",
+      "imagePath":"https://live.staticflickr.com/65535/51961810544_1fa913d0ca_b.jpg",
+      "description":"aponte para alguem, essa pessoa bebe 3 shots"
     }
-  }
+  ]
 }
+
+//Se deu Bem - "https://live.staticflickr.com/65535/51961810544_1fa913d0ca_b.jpg"
+//Se deu Mau - "https://live.staticflickr.com/65535/51961522291_f184a2b175_b.jpg"
