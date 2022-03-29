@@ -6,12 +6,17 @@ export default StyleSheet.create({
     backgroundColor: '#F5DFBB',
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+  },
+  swiperContainer:{
+    width: '100%',
+    height: '75%',
+    
   },
   image:{
     width: 120,
     height: 120,
-    marginTop: 40,
+    marginTop: 50,
     marginBottom: 40
   },
   card:{
