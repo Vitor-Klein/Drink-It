@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: '#F5DFBB',
+    backgroundColor: '#9D6381',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -14,14 +14,14 @@ export default StyleSheet.create({
     
   },
   image:{
-    width: 120,
-    height: 120,
-    marginTop: 50,
-    marginBottom: 40
+    width: 127,
+    height: 180,
+    marginTop: 80,
+    marginBottom: 20
   },
   card:{
     flex: 1,
-    backgroundColor: '#0E9594',
+    backgroundColor: '#612940',
     width: '100%',
     borderTopRightRadius: 50,
     borderTopLeftRadius: 50,

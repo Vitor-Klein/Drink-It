@@ -6,7 +6,7 @@ import { Button, Center } from 'native-base'
 import Swiper from 'react-native-dynamic-deck-swiper'
 import styles from './style'
 import DrinkImage from '../assets/drink.png'
-import cards from '../cards.json'
+import {cards} from '../cards'
 
   
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
   const[description, setDescription] = useState('')
   const[imagePath, setImagePath] = useState('')
 
-  function teste(){
+  function selectHandleCard(){
     const index = Math.floor(Math.random() * cards.cards.length);
     var cardValue = cards.cards[index]
 
@@ -24,7 +24,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    teste()
+    selectHandleCard()
     LogBox.ignoreLogs(['Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`'])
     LogBox.ignoreLogs(['source.uri should not be an empty string'])
   }, [])
@@ -50,9 +50,7 @@ export default function Home() {
                     <Text style={styles.title}>{title}</Text>
                     <Image 
                     style={styles.imageCard}
-                    source={{ 
-                      uri: imagePath.toString()
-                    }}
+                    source={imagePath}
                     alt="Alternate Text"
                   />
                   <Text style={styles.text}>{description}</Text>
@@ -61,7 +59,7 @@ export default function Home() {
             )
           }
         }}
-        onSwiped={() => teste()}
+        onSwiped={() => selectHandleCard()}
       >
         {(card) =>
           card === null ? (
