@@ -8,18 +8,18 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  swiperContainer:{
+  swiperContainer: {
     width: '100%',
     height: '75%',
-    
+
   },
-  image:{
+  image: {
     width: 127,
     height: 180,
     marginTop: 80,
     marginBottom: 20
   },
-  card:{
+  card: {
     flex: 1,
     backgroundColor: '#612940',
     width: '100%',
@@ -28,20 +28,20 @@ export default StyleSheet.create({
     alignItems: 'center',
     margin: 0
   },
-  title:{
+  title: {
     fontSize: 50,
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
     color: '#fff',
     textAlign: 'center',
   },
-  imageCard:{
+  imageCard: {
     width: 220,
     height: 220,
     marginTop: 40,
     marginBottom: 40
   },
-  text:{
+  text: {
     fontSize: 25,
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
