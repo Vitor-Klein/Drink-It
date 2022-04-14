@@ -1,5 +1,8 @@
 import { StyleSheet } from 'react-native';
+import { Dimensions } from 'react-native'
 
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default StyleSheet.create({
   container: {
@@ -9,14 +12,14 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   swiperContainer: {
-    width: '100%',
+    width: windowWidth,
     height: '75%',
-
+    flex: 1
   },
   image: {
     width: 127,
     height: 180,
-    marginTop: 80,
+    marginTop: 50,
     marginBottom: 20
   },
   card: {
@@ -26,22 +29,24 @@ export default StyleSheet.create({
     borderTopRightRadius: 50,
     borderTopLeftRadius: 50,
     alignItems: 'center',
-    margin: 0
+    margin: 0,
   },
   title: {
-    fontSize: 50,
+    fontSize: 30,
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
     color: '#fff',
     textAlign: 'center',
   },
   imageCard: {
-    width: 220,
-    height: 220,
-    marginTop: 40,
-    marginBottom: 40
+    width: 250,
+    height: 250,
+    resizeMode: 'contain',
+    marginBottom: 20,
+    marginTop: 20
   },
   text: {
+    zIndex: 1,
     fontSize: 25,
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
@@ -49,4 +54,27 @@ export default StyleSheet.create({
     textAlign: 'justify',
     width: 300
   },
+  initialText:{
+    textAlign: 'center',
+    fontSize: 25,
+    fontFamily: 'sans-serif',
+    fontWeight: 'bold',
+    color: '#fff',
+    width: 350,
+    marginTop: 350
+  },
+  InitailCard:{
+    flex: 1,
+    backgroundColor: '#612940',
+    width: (windowWidth - 100),
+    borderTopRightRadius: 50,
+    borderTopLeftRadius: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    margin: 0,
+  },
+  initialAnimation:{
+    marginTop: -50
+  }
 });

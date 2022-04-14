@@ -6,7 +6,10 @@ import { Button, Center } from 'native-base'
 import Swiper from 'react-native-dynamic-deck-swiper'
 import styles from './style'
 import DrinkImage from '../assets/drink.png'
+import DrunkAnimation from '../animations/drunk.json'
 import { cards } from '../cards'
+import LottieView from  "lottie-react-native"
+
 
 export default function Home() {
   const [title, setTitle] = useState('')
@@ -26,6 +29,7 @@ export default function Home() {
     selectHandleCard()
     LogBox.ignoreLogs(['Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`'])
     LogBox.ignoreLogs(['source.uri should not be an empty string'])
+    LogBox.ignoreLogs(['Failed prop'])
   }, [])
 
   return (
@@ -43,33 +47,48 @@ export default function Home() {
               return null;
             }
             if (first || left || right) {
+
               return (
-                <Button style={styles.card}>
-                  <Center>
-                    <Text style={styles.title}>{title}</Text>
-                    <Image
-                      style={styles.imageCard}
-                      source={imagePath}
-                      alt="Alternate Text"
+                title === '' ? (
+                  <View style={styles.InitailCard}>
+                    <Text style={styles.initialText}>
+                      Bem vindo ao DrinkIt para começar arraste a carta para qualquer lado
+                    </Text>
+                    <LottieView
+                      style={styles.initialAnimation}
+                      source={DrunkAnimation}
+                      loop
+                      autoPlay
+                      speed={0.75}
                     />
-                    <Text style={styles.text}>{description}</Text>
-                  </Center>
-                </Button>
+                  </View>
+                ) : (
+                  <Button style={styles.card}>
+                    <Center>
+                      <Text style={styles.title}>{title}</Text>
+                      <View style={styles.imageContainer}>
+                        <Image
+                          style={styles.imageCard}
+                          source={imagePath}
+                          alt="Alternate Text"
+                        />
+                      </View>
+
+                      <Text style={styles.text}>{description}</Text>
+                    </Center>
+                  </Button>
+                )
               )
             }
           }}
           onSwiped={() => selectHandleCard()}
         >
           {(card) =>
-            card === null ? (
-              <View style={styles.card}>
-                <Text style={styles.text}>This is the end of the deck, pal.</Text>
-              </View>
-            ) : (
-              <View style={styles.card}>
-                <Text style={styles.text}>{card}</Text>
-              </View>
-            )
+          (
+            <View style={styles.card}>
+              <Text style={styles.text}>{card}</Text>
+            </View>
+          )
           }
         </Swiper>
       </View>
