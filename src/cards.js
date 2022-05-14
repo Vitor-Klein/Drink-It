@@ -219,7 +219,7 @@ export const cards = {
     },
     {
       id: "37",
-      title: "Maromba",
+      title: "A lei do mais forte",
       imagePath: require('./assets/drunkHappy.png'),
       description: "Escolha uma pessoa, a cada 5 flexões que você fizer ela bebe 1 shot, se não chegar a 5 flexões você bebe 2 shots"
     },
