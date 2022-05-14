@@ -15,17 +15,31 @@ export default function Home() {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [imagePath, setImagePath] = useState('')
+  const [cardNumber, setCardNumber] = useState(0)
+  let shuffleCard = cards.cards
+
+
+  function shuffleCards() {
+    shuffleCard.sort(function (a, b) {
+      if (a.title < b.title)
+      return -1;
+      if (a.title > b.title)
+      return 1;
+      return 0;
+    })
+  }
 
   function selectHandleCard() {
-    const index = Math.floor(Math.random() * cards.cards.length);
-    var cardValue = cards.cards[index]
+        var cardValue = shuffleCard[cardNumber]
+        setTitle(cardValue.title)
+        setDescription(cardValue.description)
+        setImagePath(cardValue.imagePath)
+        setCardNumber(cardNumber + 1)
 
-    setTitle(cardValue.title)
-    setDescription(cardValue.description)
-    setImagePath(cardValue.imagePath)
   }
 
   useEffect(() => {
+    shuffleCards()
     selectHandleCard()
     LogBox.ignoreLogs(['Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`'])
     LogBox.ignoreLogs(['source.uri should not be an empty string'])

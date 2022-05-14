@@ -39,15 +39,15 @@ export default StyleSheet.create({
     textAlign: 'center',
   },
   imageCard: {
-    width: 250,
-    height: 250,
+    width: 210,
+    height: 210,
     resizeMode: 'contain',
     marginBottom: 20,
     marginTop: 20
   },
   text: {
     zIndex: 1,
-    fontSize: 25,
+    fontSize: 20,
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
     color: '#fff',

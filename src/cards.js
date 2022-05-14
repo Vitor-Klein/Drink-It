@@ -231,68 +231,86 @@ export const cards = {
     },
     {
       id: "39",
-      title: "Alegria!!!!!!!!!!",
+      title: "Cade a chave?",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Algum jogador esconde uma chave, a pessoa da vez tem que achar ela em 3min, caso nao ache ela bebe 3 shots"
     },
     {
       id: "40",
-      title: "Alegria!!!!!!!!!!",
+      title: "No Paredão",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Beije a parede mais proxima ou beba 2 shots"
     },{
       id: "41",
-      title: "Alegria!!!!!!!!!!",
+      title: "Au Au!",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Esfregue na perna de alguem como se fosse um cachorro ou beba 2 shots"
     },
     {
       id: "42",
-      title: "Alegria!!!!!!!!!!",
+      title: "Não pense só chupe",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Chupe o dedão de alguem ou beba 3 shots"
     },
     {
       id: "43",
-      title: "Alegria!!!!!!!!!!",
+      title: "Não confie em ninguem",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Beije o jogador a sua esquerda no lugar que ele escolher ou beba 3 shots"
     },
     {
       id: "44",
-      title: "Alegria!!!!!!!!!!",
+      title: "Dieta balanceada",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Coma um pedaço de guardanapo ou beba 2 shots"
     },
     {
       id: "45",
-      title: "Alegria!!!!!!!!!!",
-      imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      title: "Pessimas Memorias",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Diga como voce imagina o dia em que foi concebido ou beba 2 shots"
     },
     {
       id: "46",
-      title: "Alegria!!!!!!!!!!",
+      title: "Solidão",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Todos os solteiros bebem"
     },
     {
       id: "47",
-      title: "Alegria!!!!!!!!!!",
+      title: "Carinha sexy por favor",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Desfile como uma pessoa do sexo oposto"
     },
     {
       id: "48",
-      title: "Alegria!!!!!!!!!!",
+      title: "Que Delicia!",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Coloque ketchup na sua bebida ou beba 4 shots"
     },
     {
       id: "49",
-      title: "Alegria!!!!!!!!!!",
+      title: "AAWWWWH!",
       imagePath: require('./assets/drunkSad.png'),
-      description: "TODOS BEBEM 2 SHOTS!!!!!"
+      description: "Finja um orgasmo ou beba 2 shots"
+    },
+    {
+      id: "50",
+      title: "A dominatrix chegou!",
+      imagePath: require('./assets/drunkSad.png'),
+      description: "Fique de quatro e deixe alguem te dar uns tapas ou beba 3 shots"
+    },
+    {
+      id: "51",
+      title: "Alô...UUUURRGG",
+      imagePath: require('./assets/drunkSad.png'),
+      description: "Ligue pra alguem e fique grunindo ou beba 1 shot"
+    },
+    {
+      id: "52",
+      title: "Faça meu merchant",
+      imagePath: require('./assets/drunkSad.png'),
+      description: "Poste uma foto dizendo que esta jogando Drink-It ou beba 1 shot"
     },
   ]
 }
