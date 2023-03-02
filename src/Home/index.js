@@ -8,7 +8,7 @@ import styles from './style'
 import DrinkImage from '../assets/drink.png'
 import DrunkAnimation from '../animations/drunk.json'
 import { cards } from '../cards'
-import LottieView from  "lottie-react-native"
+import LottieView from "lottie-react-native"
 
 
 export default function Home() {
@@ -16,35 +16,35 @@ export default function Home() {
   const [description, setDescription] = useState('')
   const [imagePath, setImagePath] = useState('')
   const [cardNumber, setCardNumber] = useState(0)
-  let shuffleCard = cards.cards
-
-
-  function shuffleCards() {
-    shuffleCard.sort(function (a, b) {
-      if (a.title < b.title)
-      return -1;
-      if (a.title > b.title)
-      return 1;
-      return 0;
-    })
-  }
-
-  function selectHandleCard() {
-        var cardValue = shuffleCard[cardNumber]
-        setTitle(cardValue.title)
-        setDescription(cardValue.description)
-        setImagePath(cardValue.imagePath)
-        setCardNumber(cardNumber + 1)
-
-  }
+  const [myObj, setMyObj] = useState(cards.cards)
 
   useEffect(() => {
-    shuffleCards()
-    selectHandleCard()
+    const shuffled = Object.fromEntries(
+      Object.values(myObj).sort(() => Math.random() - 0.5)
+        .map((value, index) => [index + 1, value])
+    );
+    setMyObj(shuffled);
+    selectHandleCard(shuffled)
+  }, []);
+
+  function selectHandleCard(obj) {
+    const keys = Object.keys(obj).sort(() => Math.random() - 0.5);
+    var selected = { title: '', description: '', imagePath: '' };
+    for (let i = 0; i < keys.length; i++) {
+      const key = keys[i];
+      if (!selected[key]) {
+        selected = obj[key];
+        break;
+      }
+    }
+
+    setTitle(selected.title)
+    setDescription(selected.description)
+    setImagePath(selected.imagePath)
+
+    console.log(selected.title)
     LogBox.ignoreLogs(['Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`'])
-    LogBox.ignoreLogs(['source.uri should not be an empty string'])
-    LogBox.ignoreLogs(['Failed prop'])
-  }, [])
+  }
 
   return (
     <View style={styles.container}>
@@ -95,7 +95,7 @@ export default function Home() {
               )
             }
           }}
-          onSwiped={() => selectHandleCard()}
+          onSwiped={() => selectHandleCard(myObj)}
         >
           {(card) =>
           (
