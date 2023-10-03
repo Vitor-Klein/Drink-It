@@ -240,7 +240,7 @@ export const cards = {
       title: "No Paredão",
       imagePath: require('./assets/drunkSad.png'),
       description: "Beije a parede mais proxima ou beba 2 shots"
-    },{
+    }, {
       id: "41",
       title: "Au Au!",
       imagePath: require('./assets/drunkSad.png'),
@@ -312,5 +312,47 @@ export const cards = {
       imagePath: require('./assets/drunkSad.png'),
       description: "Poste uma foto dizendo que esta jogando Drink-It ou beba 1 shot"
     },
+    {
+      id: "53",
+      title: "Mímica Maluca",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Faça uma mímica de uma cena de filme famoso. Se ninguém adivinhar em 1 minuto, beba 2 shots."
+    },
+    {
+      id: "54",
+      title: "Versão Canhota",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Use sua mão não dominante para beber sua próxima bebida ou beba 1 shot."
+    },
+    {
+      id: "55",
+      title: "Confissão Embriagada",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Conte uma confissão engraçada ou vergonhosa. Se ninguém rir, beba 2 shots."
+    },
+    {
+      id: "56",
+      title: "Hora da Serenata",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Cante uma música romântica para alguém no grupo ou beba 2 shots."
+    },
+    {
+      id: "57",
+      title: "Dance na Mesa",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Suba na mesa e dance por 1 minuto ou beba 3 shots."
+    },
+    {
+      id: "58",
+      title: "Imitação de Celebridade",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Faça uma imitação de uma celebridade. Se ninguém adivinhar quem é, beba 2 shots."
+    },
+    {
+      id: "59",
+      title: "Pergunta Maluca",
+      imagePath: require('./assets/drunkHappy.png'),
+      description: "Faça uma pergunta embaraçosa para alguém no grupo. Se a pessoa não quiser responder, ela bebe 2 shots."
+    }
   ]
 }
